@@ -30,4 +30,4 @@ test {
     useJUnitPlatform()
 }
 
-mainClassName = 'fractals.main.Runner'
+mainClassName = 'Runner'
