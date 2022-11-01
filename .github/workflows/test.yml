@@ -14,9 +14,9 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Utilise maven's built in test command.
+      - name: Utilise Gradle's built in test command.
         run: | 
-         mvn test
+         ./gradlew test
         
     name: "$CI_COMMIT_REF_NAME"
         
