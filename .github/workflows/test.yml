@@ -1,0 +1,23 @@
+name: Test
+
+on:
+  # Triggers the workflow everytime a pull request is made.
+  pull_request:
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+  
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Utilise maven's built in test command.
+        run: | 
+         mvn test
+        
+    name: "$CI_COMMIT_REF_NAME"
+        
+    
